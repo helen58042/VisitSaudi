@@ -1,0 +1,140 @@
+@media screen and (max-width: 1200px) {
+	.container-wide {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.header-top__block_1 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.container {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.todo__item-text,
+	.todo__item-pict {
+		max-width: 49%;
+	}
+	.todo__item-pict img {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.header-top-line {
+		display: block;
+	}
+	.btn-offer {
+		display: inline-block;
+	}
+	.header-top__block_2 {
+		margin-bottom: 20px;
+	}
+	.about-tabs label {
+		font-size: 16px;
+	}
+	.content { display: block; }
+	.footer-container {
+		display: block;
+	}
+	.pt100px { padding-top: 50px; }
+	.pb100px { padding-bottom: 50px; }
+	.mb50px  { margin-bottom: 25px; }
+	.mb100px { margin-bottom: 50px; }
+	.footer-block__item { padding-left: 20px; }
+	.footer-block__btn {
+		margin-bottom: 30px;
+		width: 230px;
+	}
+	.footer-social {
+		display: block;
+	}
+	.footer-social a { margin-right: 30px; }
+	.todo__item {
+		display: block;
+	}
+	.todo__item-text a { margin-bottom: 50px; }
+	.todo__item-text,
+	.todo__item-pict,
+	.todo__item-pict img {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.menu {
+		display: flex;
+		flex-direction: column;
+	}
+	.menu li {
+		margin-bottom: 15px;
+	}
+	.menu li:last-child {
+		margin-bottom: 0;
+	}
+	.about-line { display: block; }
+	.about-line h2 { margin-bottom: 20px; }
+	.content img {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.about-tabs label { width: 80%; }
+	.pt50px { padding-top: 25px; }
+	.pb50px { padding-bottom: 25px; }
+	.pt14pr { padding-top: 7%; }
+}
+
+@media screen and (max-width: 550px) {
+	.content img { width: 100%; }
+	.todo__item-text,
+	.todo__item-pict,
+	.todo__item-pict img {
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	h1 { font-size: 40px; }
+	h2 { font-size: 30px; }
+	h3 { font-size: 24px; }
+	h4 { font-size: 22px; }
+	.pt14pr { padding-top: 14%; }
+	/*.header-top-line {
+		display: flex;
+	}*/
+	.btn-offer {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.p-comment { font-size: 14px; }
+	.p-italian { font-size: 16px; }
+
+	/* - - Кнопка-гамбургер - - */
+	.menu {
+		display: none;
+		/*margin-top: 50px;*/
+	}
+	.menu-open {
+		display: block;
+		margin-left: auto; /* приблизить к правому краю контейнера */
+		/*margin-bottom: 10px;*/
+	}
+	.menu.show { display: flex; }
+	/* - - - - - - - - - */
+
+
+}
+
+@media screen and (max-width: 400px) {
+}
+
