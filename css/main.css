@@ -1,10 +1,102 @@
-.header {
+header {
 	height: 100vh;
 	background-image: url('../img/header/header_bg_1.jpg');
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.header-menu__container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 1200px;
+	margin: 0 auto;
+}
+.header-menu-line {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-transform: uppercase;
+}
+nav {}
+.nav__list {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	list-style: none;
+}
+.nav__item { margin-right: 20px; }
+.nav__link { color: #401e12; }
+.nav__link:hover {
+	padding: 5px 0;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+.header-btn {
+	cursor: pointer;
+	color: #fff;
+	border: 2px solid #401e12;
+	background-color: transparent;
+	border-radius: 10px;
+	padding: 10px 25px;
+	box-shadow: 0 0 40px 40px #401e12 inset, 0 0 0 0 #401e12;
+}
+.header-btn:hover {
+	box-shadow: 0 0 10px 0 #401e12 inset, 0 0 10px 4px #401e12;
+	color: #401e12;
+}
+
+
+
+
+
+
+.header-screen {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.header__video p { line-height: 45px; }
+.header__video-btn {
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 16px solid transparent;
+	border-left: 24px solid #fff;
+	border-bottom: 16px solid transparent;
+	margin-left: 12px;
+	margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+section {
+	background-color: aquamarine;
+	height: 2000px;
+}
+
+
+
+
+
 .header-top-line {
 	/*position: sticky;*/
 	position: relative;     /* 25/05/2020 */
@@ -20,8 +112,15 @@
 .menu, .menu li {
 	display: inline-block;
 	list-style: none;
+	padding: 10px 0;
 }
-.menu li a:hover { color: #EDAC40; }
+.menu li a { padding: 5px 0;}
+.menu li a:hover {
+	color: #EDAC40;
+	border-bottom: 1px solid #EDAC40;
+	border-top: 1px solid #EDAC40;
+}
+
 /* кнопка меню - "гамбургер" - start */
 .menu-open {
 	position: absolute;
@@ -47,96 +146,13 @@
 	background: -o-linear-gradient(left, #240b36, #c31432);
 	background: linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.header-screen {}
-.header__video p { line-height: 45px; }
-.header__video-btn {
-	width: 45px;
-	height: 45px;
-	line-height: 45px;
-	border: 2px solid #EDAC40;
-	border-radius: 50%;
-	text-align: center;
-}
-
-/* <section class="about" - start >*/
-.about {
-	background: #fff;
-}
-.about-line {
-	display: flex;
-}
-.about-line h2 {
-	margin-right: 15%;
-	min-width: 180px;
-}
-/* ----------------------------- */
-.about-tabs { margin-bottom: 20px; }
-.about-tabs>input[type="radio"] { display: none; }
-.about-tabs label {
-	display: inline-block;
-	margin-bottom: 20px;
-	padding: 0 0 20px 20px;
-	width: 30%;
-	cursor: pointer;
-	outline: none;
-	border: none;
-	border-bottom: 1px solid #d9d7d7;
-	transition: 0.3s;
-	font-size: 24px;
-	font-weight: 300;
-}
-.about-tabs>div {
-	display: none;
-	/*border: 1px solid #e0e0e0;*/
-}
-.about-tabs label:hover {
-	color: #EDAC40;
-	border-bottom-color: #EDAC40;
-}
-.about-tabs label:active {
-	color: #EDAC40;
-	border-bottom-color: #EDAC40;
-}
-#about-btn-1:checked ~ #about-content-1,
-#about-btn-2:checked ~ #about-content-2,
-#about-btn-3:checked ~ #about-content-3 {
-	display: block;
-}
-.content {
-	display: flex;
-	justify-content: space-between;
-}
-.content img,
-.about-details__comments { max-width: 520px; }
-.content img { margin-right: 30px; }
-.about-details__comments {
-	line-height: 18px;
-	letter-spacing: 0.04em;
-}
-/* <section class="about" - finish >*/
 
 
-/* <section class="todo" - start >*/
-.todo {}
-.todo-topline {
-	display: flex;
-	justify-content: space-between;
-	border-bottom: 1px solid #efefef;
-}
-.todo-items {}
-.todo__item {
-	display: flex;
-	justify-content: space-between;
-}
-.todo__item-text {
-	max-width: 500px;
-}
-.todo__item-pict,
-.todo__item-pict img {
-	max-width: 570px;
-}
 
-/* <section class="todo" - finish >*/
+
+
+
+
 
 
 /* -- footer -- */

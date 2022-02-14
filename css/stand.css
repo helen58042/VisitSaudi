@@ -1,30 +1,10 @@
-@font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy Light'),
-    	local('Gilroy-Light'),
-    	url('../fonts/Gilroylight.woff2') format('woff2'),
-    	url('../fonts/Gilroylight.woff') format('woff'),
-    	url('../fonts/Gilroylight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy ExtraBold'),
-    	local('Gilroy-ExtraBold'),
-    	url('../fonts/Gilroyextrabold.woff2') format('woff2'),
-    	url('../fonts/Gilroyextrabold.woff') format('woff'),
-    	url('../fonts/Gilroyextrabold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
 /* --------------------------- */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	line-height: 1;
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 }
 input, input:hover, input:active, input:focus,
 button, button:hover, button:active, button:focus {
@@ -42,33 +22,103 @@ a { text-decoration: none; }
 	margin-right: auto;
 }
 /* --------------------------- */
-.f-ti  { font-family: 'Tinos', serif; }
-.f-gi  { font-family: 'Gilroy'; }
-.f-fi  { font-family: 'Fira Sans', sans-serif; }
+/* FONTS */
+@font-face {
+    font-family: 'Alegreya Sans-400';
+    src: url('../fonts/AlegreyaSans-Regular.eot');
+    src: url('../fonts/AlegreyaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlegreyaSans-Regular.woff2') format('woff2'),
+        url('../fonts/AlegreyaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Alegreya Sans-500';
+    src: url('../fonts/AlegreyaSans-Medium.eot');
+    src: url('../fonts/AlegreyaSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlegreyaSans-Medium.woff2') format('woff2'),
+        url('../fonts/AlegreyaSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Alegreya Sans-700';
+    src: url('../fonts/AlegreyaSans-Bold.eot');
+    src: url('../fonts/AlegreyaSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlegreyaSans-Bold.woff2') format('woff2'),
+        url('../fonts/AlegreyaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Alegreya Sans-300';
+    src: url('../fonts/AlegreyaSans-Light.eot');
+    src: url('../fonts/AlegreyaSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlegreyaSans-Light.woff2') format('woff2'),
+        url('../fonts/AlegreyaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Tinos-700';
+    src: url('../fonts/Tinos-Bold.eot');
+    src: url('../fonts/Tinos-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Tinos-Bold.woff2') format('woff2'),
+        url('../fonts/Tinos-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Tinos-400';
+    src: url('../fonts/Tinos-Regular.eot');
+    src: url('../fonts/Tinos-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Tinos-Regular.woff2') format('woff2'),
+        url('../fonts/Tinos-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.f-al-300 { font-family: 'Alegreya Sans-300'; }
+.f-al-400 { font-family: 'Alegreya Sans-400'; }
+.f-al-500 { font-family: 'Alegreya Sans-500'; }
+.f-al-700 { font-family: 'Alegreya Sans-700'; }
+.f-ti-400 { font-family: 'Tinos-400'; }
+.f-ti-700 { font-family: 'Tinos-700'; }
+.fz14 { font-size: 14px; }
+.fz16 { font-size: 16px; }
+/* --------------------------- */
+/* MARGIN & PADDING */
+.mb15px { margin-bottom: 15px; }
+.mr30px { margin-right: 30px; }
+.p-20-0 { padding: 20px 0;}
 
-.fz13  { font-size: 13px; }
-.fz16  { font-size: 16px; }
-.fz18  { font-size: 18px; }
-.fz24  { font-size: 24px; }
-.fz25  { font-size: 25px; }
-.fz35  { font-size: 35px; }
-.fz50  { font-size: 50px; }
+/* --------------------------- */
+/* COLOURS */
+.c-white { color: #fff; }
 
-.fw300 { font-weight: 300; }
-.fw400 { font-weight: 400; }
-.fw500 { font-weight: 500; }
-.fw700 { font-weight: 700; }
-.fw800 { font-weight: 800; }
 
-.ttu   { text-transform: uppercase; }
-.tdn   { text-decoration: none; }
+
+
 /* --------------------------- */
 h1 {
-    font-family: 'Tinos', serif;
+    font-family: 'Tinos-700', serif;
     color: #fff;
     font-size: 50px;
-    font-weight: 400;
 }
+
+h4 {
+    font-family: 'Tinos-700', serif;
+    font-size: 27px;
+}
+
+
+
+
 h2 {
     font-family: 'Tinos', serif;
     font-size: 35px;
@@ -82,37 +132,7 @@ h3 {
     font-weight: 400;
     color: #000;
 }
-h4 {
-    font-family: 'Tinos', serif;
-    font-size: 27px;
-    font-weight: 400;
-    /*color: #EDAC40;*/
-}
-.p-comment {
-    font-family: 'Gilroy';
-    font-size: 16px;
-    font-weight: 300;
-    color: #000;
-    line-height: 18px;
-}
-.p-italian {
-    margin-top: 35px;
-    margin-bottom: 35px;
-    max-width: 450px;
-    font-family: 'Gilroy';
-    font-size: 20px;
-    font-weight: 300;
-    font-style: italic;
-    color: #EDAC40;
-    line-height: 104.8%;
-    letter-spacing: 0.04em;
-}
-.btn-offer {
-    padding: 14px 40px;
-    border: 3px solid #EDAC40;
-    border-radius: 25px;
-    text-transform: uppercase;
-}
+
 /* --------------------------- */
 .d-flex {
     display: -webkit-flex;
@@ -120,6 +140,22 @@ h4 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+.btn-offer {
+    padding: 14px 40px;
+    border: 3px solid #EDAC40;
+    border-radius: 25px;
+    text-transform: uppercase;
 }
 .d-none { display: none; }
 .d-blok { display: block; }
@@ -130,42 +166,17 @@ h4 {
 .d-aic  { align-items: center; }
 .d-drr  { flex-direction: row-reverse; }
 /* --------------------------- */
-.mb7pr   { margin-bottom: 7%; }
-.mb10pr  { margin-bottom: 10%; }
-.mb15px  { margin-bottom: 15px; }
-.mb20px  { margin-bottom: 20px; }
-.mb30px  { margin-bottom: 30px; }
-.mb50px  { margin-bottom: 50px; }
-.mb100px { margin-bottom: 100px; }
 
-.ml20px  { margin-left: 20px; }
 
-.mr30px  { margin-right: 30px; }
 
-.mt50px  { margin-top: 50px; }
 
-.pb12pr  { padding-bottom: 12%; }
-.pb40px  { padding-bottom: 40px; }
-.pb50px  { padding-bottom: 50px; }
-.pb60px  { padding-bottom: 60px; }
-.pb70px  { padding-bottom: 70px; }
-.pb100px { padding-bottom: 100px; }
 
-.pt14pr  { padding-top: 14%; }
-.pt20pr  { padding-top: 20%; }
-.pt40px  { padding-top: 40px; }
-.pt50px  { padding-top: 50px; }
-.pt60px  { padding-top: 60px; }
-.pt70px  { padding-top: 70px; }
-.pt100px { padding-top: 100px; }
-/* --------------------------- */
-.c-black  { color: #000; }
-.c-white  { color: #fff; }
-.c-yellow { color: #EDAC40; }
+
+
 /* --------------------------- */
 .line-fluid {
     height: 1px;
-    background-color: #585757;
+    background-color: #734230;
 }
 /* --------------------------- */
 /* Текст + стрелка вправо */
